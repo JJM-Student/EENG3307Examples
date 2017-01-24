@@ -7,7 +7,7 @@ double my_function(char *filename)
    FILE *fp;
    int index;
    double s,c;
-   double x,sum=0;
+   double sum=0; /* Remove reference to unused x variable */
    fp=fopen(filename,"r");
    printf("The file that I am reading from is %s\n",filename);
    while (!feof(fp))
